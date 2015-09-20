@@ -7,8 +7,7 @@
 
     <title>{{ config('blog.title') }} Admin</title>
 
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"
-          rel="stylesheet">
+    <link href="/assets/css/admin.css" rel="stylesheet">
     @yield('styles')
 
   <!--[if lt IE 9]>
@@ -18,7 +17,6 @@
 </head>
 <body>
 
-{{-- Navigation Bar --}}
 <nav class="navbar navbar-default">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -31,7 +29,7 @@
             </button>
             <a class="navbar-brand" href="#">{{ config('blog.title') }} Admin</a>
         </div>
-        <div class="collapse navbar-collapse" id="navbar-menu">
+        <div class="collapse navbar-collapse" id=navbar-menu">
             @include('admin.partials.navbar')
         </div>
     </div>
@@ -39,10 +37,7 @@
 
 @yield('content')
 
-<script
-        src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script
-        src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="/assets/js/admin.js"></script>
 
 @yield('scripts')
 
